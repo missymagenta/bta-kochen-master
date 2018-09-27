@@ -1,36 +1,54 @@
 <!doctype html>
 <html>
- <head>
-   <!--Meta Tags sind selbstschliessend-->
-   <meta charset="utf-8">
-   <title>BTA Kochen | Startseite </title>
-   <meta name="description" content="Die Website fuer Webworker. Tolle Rezepte, einfach zu kochen, alles super lecker">
-   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
-   <link rel="stylesheet" href="Style.css">
- </head>
- <body>
-  <header id="navi-header">
-    <div class="wrapper">
-      <a href="index.html">
-        <img src="img/logo.svg" alt="logo kochen 2.0" width="40" height="40">
-      </a>
-   <!--nav ist das Element fuer Navigation-->
-      <nav id="menu">
-        <ul>
-          <li>
-            <a href="index.html">HOME</a>
-          </li>
-          <li>
-            <a href="#">REZEPTE</a>
-          </li>
-          <li>
-            <a href="#">UEBER UNS</a>
-          </li>
-          <li>
-            <a href="#">KONTAKT</a>
-          </li>
-        </ul>
-      </nav>
-  </header>
- </body>
+  <head>
+    <!--Meta Tags sind selbstschliessend-->
+    <meta charset="utf-8">
+    <title>BTA Kochen | Startseite</title>
+    <meta name="description" content="Die Kochsite für Webworker. Tolle Rezepte, einfach zu kochen, alles super lecker.">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+    <link rel="stylesheet" href="fonts/icons.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header id="navi-header">
+      <div class="wrapper">
+        <a href="index.html">
+          <img id="logo" src="img/logo.svg" alt="Logo Kochen 2.0"  height="40">
+        </a>
+
+        <button id="burger" type="button" name="button" ><span class="icon-menu"></span></button>
+        <!-- nav ist das Element für Navigation -->
+
+        <nav id="menu">
+          <ul>
+            <li>
+              <a href="index.html" id="navi">Home</a>
+            </li>
+            <li>
+              <a href="#">Rezepte</a>
+            </li>
+            <li>
+              <a href="#">Über uns</a>
+            </li>
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+     <main id="hauptteil">
+       <div class="hero">
+         <div class="hero-text">
+         <h1>Die besten Rezepte für Webworker</h1>
+         <h2>Es gibt mehr Pizza & Ravioli</h2>
+         <a href href="#">Entdecke die Leckereien</a>
+         </div>
+       </div>
+
+     </main>
+
+    <!-- hier kommt das JavaScript für das Menü-->
+    <script type="text/javascript" src="menu.js"></script>
+  </body>
 </html>

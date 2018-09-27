@@ -3,55 +3,114 @@
 }
 
 body {
-  margin:0;
-  font-family:Helvetica, Arial,sans-serif;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
   line-height: 1.4;
-  font-size: 100%
+  font-size: 100%;
 }
 
 #navi-header {
-background-color: rgb(40,44,52);
+  background-color: rgb(40, 44, 52);
+  height: 60px;
 }
 
 .wrapper {
-   width: 90%;
-   margin:auto;
+  width: 90%;
+  margin: auto;
 }
 
-/**
-*irgendwas
-*
-**/
-
-ul
-{
-    list-style: none;
-    margin:0;
-    padding:0;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-/*das ist ein Kommentar*/
-
-#navi-header a{
-   color: #fff;
-   font-weight: bold;
-   text-decoration: none;
-   text-transform: uppercase;
-   transition: 0.8s;
+/* Das ist ein Kommentar */
+#navi-header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.8s;
 }
 
-#navi-header a:hover{
-    color: rgb(69,139,116);
-
+#navi-header a:hover {
+  color: rgb(69, 139, 116);
 }
 
-@media (min-width: 1024px) {
-
-    #navi-header li{
-      display: inline-block;
-    }
+#menu {
+  display: none;
 }
 
-#menu top left {
+#logo {
+  margin-top: 10px;
+}
 
+#burger {
+  background: transparent;
+  color:#fff;
+  float: right;
+  border: none;
+  font-size: 2rem;
+  margin-top: 11px;
+}
+
+#menu.show{
+  display: block;
+  background-color: rgb(40, 44, 52);
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  text-align: center;
+}
+
+.hero {
+  background-image: url(img/intro.jpg);
+  height:100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+}
+
+.hero-text {
+  color:#fff;
+  margin:auto;
+  text-align: center;
+}
+
+.hero-text a {
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(102, 205, 170);
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  transition: 0.2s;
+  text-shadow: 1px 0px 5px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow:    0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+  box-shadow:         0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+}
+
+.hero-text a:hover {
+  background-color: rgb(69, 139, 116);
+}
+
+@media (min-width:1024px) {
+  #navi-header li {
+    display: inline-block;
+    margin-left: 2rem;
+  }
+
+  #menu {
+    float: right;
+    display: block;
+    margin-top: 19px;
+  }
+
+  #burger {
+    display: none;
+  }
 }
