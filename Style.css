@@ -80,7 +80,7 @@ ul {
   text-align: center;
 }
 
-.hero-text a {
+.hero-text a, .card a {
   color: #fff;
   text-decoration: none;
   background-color: rgb(102, 205, 170);
@@ -94,8 +94,66 @@ ul {
   box-shadow:         0px 0px 5px 0px rgba(255, 255, 255, 0.75);
 }
 
-.hero-text a:hover {
+.hero-text a, .card a:hover {
   background-color: rgb(69, 139, 116);
+}
+
+.border {
+  border: 1px solid black;
+  border-top: none;
+  color: black;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.border a {
+  display: block;
+  box-shadow: 0px, 0px, 22px, 10px, rgba(0, 0, 0, 0.50);
+}
+
+article h3 {
+  margin: 0;
+}
+
+.card a {
+  display: block;
+}
+
+.card img {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+main img {
+  width: 100%;
+  display: block;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.card:first-child {
+  margin-right: 0.5rem;
+}
+
+.card:last-child {
+  margin-right: 0.5rem;
+}
+
+#rezepte {
+  width: 66.66666%;
+}
+
+#sidebar {
+  width: 33.33333%;
+
 }
 
 @media (min-width:1024px) {
@@ -113,4 +171,3 @@ ul {
   #burger {
     display: none;
   }
-}
